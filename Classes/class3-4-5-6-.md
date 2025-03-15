@@ -5,3 +5,4 @@
 5) introduction to github
 6) introduction to vercel and netlify
 7) introduction to git
+8) introduction and explanation about teachablemachine
