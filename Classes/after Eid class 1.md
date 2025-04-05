@@ -14,4 +14,6 @@ e) deploy
 f) maintain
 
 3. intro to Fiverr
+4. Lexica art (for generating ai image)
+
 
