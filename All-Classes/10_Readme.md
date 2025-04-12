@@ -5,4 +5,4 @@ Topics:
 3. AirForShare for sharing anything on wifi.
 4. Intro to InvideoAi for generating free ai video
 5. Intro To Pexels use for getting free images
-6. 
+6. Practicing fiver
