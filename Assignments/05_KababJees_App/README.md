@@ -49,4 +49,8 @@ If you like it, feel free to leave a ⭐ on the repo — it would mean a lot! �
 
 ---
 
+## Live Demo
+
+|KababJees      | [https://gen-ai-epbt.vercel.app/](https://gen-ai-epbt.vercel.app/) |
+
 Thanks for checking it out! 🙌
