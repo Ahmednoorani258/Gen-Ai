@@ -35,12 +35,6 @@ Working on this helped me learn:
 - Created a smooth mobile and desktop experience
 - Learned how rich responses make chatbot conversations much better
 
-## What's Next?
-
-I'm planning to:
-- Save user data in a database (like Firebase or Supabase)
-- Add a proper order inquiry form connected with the chatbot
-- Maybe even deploy the clone online so others can try it
 
 ## Final Thoughts
 
