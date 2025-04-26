@@ -6,3 +6,4 @@
 | Saylani Clone        | [https://gen-ai-vwcf.vercel.app](https://gen-ai-vwcf.vercel.app)         |
 | Internee.pk Clone    | [https://interneepk-cyan.vercel.app](https://interneepk-cyan.vercel.app) |
 | Saylani ChatBot      | [https://saylaniclonechatbotbyahmed.vercel.app/](https://saylaniclonechatbotbyahmed.vercel.app/)  |
+| KababJees Bot        | [https://kabab-jees--mu.vercel.app/](https://kabab-jees--mu.vercel.app/)
