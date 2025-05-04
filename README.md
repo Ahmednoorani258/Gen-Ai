@@ -7,5 +7,5 @@
 | Internee.pk Clone    | [https://interneepk-cyan.vercel.app](https://interneepk-cyan.vercel.app) |
 | Saylani ChatBot      | [https://saylaniclonechatbotbyahmed.vercel.app/](https://saylaniclonechatbotbyahmed.vercel.app/)  |
 | KababJees Bot        | [https://gen-ai-epbt.vercel.app/](https://gen-ai-epbt.vercel.app/) |
-| Saylani Form         | []() |
-| Pak Wheels Clone     | []() |
+| Saylani Form         | [https://saylaniregistrationform.vercel.app/](https://saylaniregistrationform.vercel.app/) |
+| Pak Wheels Clone     | [https://pakwheelsclone-weld.vercel.app/](https://pakwheelsclone-weld.vercel.app/) |
