@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon saylaniform.js"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,10 @@
     "@google-cloud/dialogflow": "^7.1.0",
     "cors": "^2.8.5",
     "dialogflow-fulfillment": "^0.5.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "ngrok": "^5.0.0-beta.2",
+    "node-mailer": "^0.1.1",
     "nodemon": "^3.1.10"
   }
 }
