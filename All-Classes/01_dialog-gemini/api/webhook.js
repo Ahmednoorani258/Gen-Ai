@@ -38,16 +38,21 @@ module.exports = async (req, res) => {
         project_budget,
         project_contact
       } = agent.parameters;
-    
+
       const timeline = project_timeline?.amount && project_timeline?.unit
         ? `${project_timeline.amount} ${project_timeline.unit}`
         : "Not specified";
-    
-      agent.add(`📌 Project: ${project_name}`);
-      agent.add(`🧩 Features: ${project_features}`);
-      agent.add(`💰 Budget: ${project_budget}`);
-      agent.add("✅ Ahmed will review your project soon.");
-    
+
+      // ✅ Respond to Dialogflow
+      agent.add(`📌 Project: ${project_name}
+        🧩 Features: ${project_features}
+        🌐 Domain: ${project_domain}
+        ⏳ Timeline: ${timeline}
+        📱 Platform: ${project_platform}
+        ✅ Ahmed will review your project soon
+        `);
+
+      // 📧 Send confirmation email
       const htmlContent = `
         <p>Thanks for submitting your project! Ahmed will review it shortly.</p>
         <ul>
@@ -59,7 +64,7 @@ module.exports = async (req, res) => {
           <li><strong>Budget:</strong> ${project_budget}</li>
         </ul>
       `;
-    
+
       try {
         const info = await transporter.sendMail({
           from: '"Ahmed" <ahmednoorani258@gmail.com>',
@@ -72,17 +77,17 @@ module.exports = async (req, res) => {
         console.error("❌ Failed to send email:", emailErr);
         agent.add("⚠️ Email failed, but your data was saved.");
       }
-    
-      return Promise.resolve(); // ✅ Required to signal completion
-    }
-    
 
-    // 🎯 Intent map
+      return Promise.resolve();
+    }
+
+    // 🎯 Map intents to handlers
     const intentMap = new Map();
     intentMap.set('Default Welcome Intent', hi);
     intentMap.set('Project Discussion Intent', projectdetails);
 
-    await agent.handleRequest(intentMap);
+    // ✅ Important: return this to let Vercel know we're done!
+    return agent.handleRequest(intentMap);
 
   } catch (err) {
     console.error("❌ Webhook error:", err);
