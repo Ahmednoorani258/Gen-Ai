@@ -38,18 +38,16 @@ module.exports = async (req, res) => {
         project_budget,
         project_contact
       } = agent.parameters;
-
+    
       const timeline = project_timeline?.amount && project_timeline?.unit
         ? `${project_timeline.amount} ${project_timeline.unit}`
         : "Not specified";
-
-      // 🧠 Dialogflow response
+    
       agent.add(`📌 Project: ${project_name}`);
       agent.add(`🧩 Features: ${project_features}`);
       agent.add(`💰 Budget: ${project_budget}`);
       agent.add("✅ Ahmed will review your project soon.");
-
-      // 📧 Email content
+    
       const htmlContent = `
         <p>Thanks for submitting your project! Ahmed will review it shortly.</p>
         <ul>
@@ -61,7 +59,7 @@ module.exports = async (req, res) => {
           <li><strong>Budget:</strong> ${project_budget}</li>
         </ul>
       `;
-
+    
       try {
         const info = await transporter.sendMail({
           from: '"Ahmed" <ahmednoorani258@gmail.com>',
@@ -72,8 +70,12 @@ module.exports = async (req, res) => {
         console.log("✅ Email sent:", info.messageId);
       } catch (emailErr) {
         console.error("❌ Failed to send email:", emailErr);
+        agent.add("⚠️ Email failed, but your data was saved.");
       }
+    
+      return Promise.resolve(); // ✅ Required to signal completion
     }
+    
 
     // 🎯 Intent map
     const intentMap = new Map();
