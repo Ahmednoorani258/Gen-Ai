@@ -313,5 +313,22 @@
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Personal-Asistant"
+      agent-id="6fd2d471-a60d-4111-bd52-4ecdf15c9f85"
+      language-code="en"
+    ></df-messenger>
+    <style>
+      df-messenger {
+       --df-messenger-bot-message: #3e2c7b;
+       --df-messenger-button-titlebar-color: #000000;
+       --df-messenger-chat-background-color: #3ea8cb;
+       --df-messenger-font-color: white;
+       --df-messenger-send-icon: #000000;
+       --df-messenger-user-message: #000000;
+      }
+    </style>
 </body>
 </html>
