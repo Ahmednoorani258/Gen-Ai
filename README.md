@@ -10,3 +10,8 @@
 |   6  | Saylani Form         | [https://saylaniregistrationform.vercel.app/](https://saylaniregistrationform.vercel.app/) |
 |   7  | Pak Wheels Clone     | [https://pakwheelsclone-weld.vercel.app/](https://pakwheelsclone-weld.vercel.app/) |
 |   8  | Portfolio chatbot    | [click here](https://chatbotportfolio-glasuya29-muhammad-ahmed-nooranis-projects.vercel.app/) |
+
+
+https://flowise-idsr.onrender.com/chatflows
+
+https://ucpd6ojw.rcld.app/chatflows
